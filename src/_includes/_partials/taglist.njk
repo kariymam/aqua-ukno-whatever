@@ -1,16 +1,16 @@
-<ul class="flex flex-row flex-wrap pt-4 pb-8 gap-2">
+<ul class="flex flex-row flex-wrap p-6 gap-2 items-center">
   {% for tag in collections.all | getAllTags | filterTagList %} {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
   <li>
     <a href="{{ tagUrl }}"
         title="{{ site.url}}{{ tagUrl }}"
-          class="post-tag relative block px-2 rounded-full {% if page.url == tagUrl %}active{% endif %}"
+          class="post-tag text-xl md:text-sm relative block rounded-full {% if page.url == tagUrl %}active{% endif %}"
           >{{ tag }}</a
         >
   </li>
   {% endfor %}
   {%- if title !== "Tag" %}
   <li>
-    <a href="/tags/" class="relative block px-2 rounded-full text-base">View taglist</a>
+    <a href="/tags/" class="relative block px-2 rounded-full text-base self-end">View taglist</a>
   </li>
   {% endif %}
 </ul>

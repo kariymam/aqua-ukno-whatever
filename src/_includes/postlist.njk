@@ -43,8 +43,8 @@
         </div>
       </a>
       </div>
-      <ul class="page-tags-list border-t-2 border-r-2 lg:border-transparent lg:absolute max-w-sm lg:bg-transparent px-4 lg:pb-2 flex flex-row flex-wrap z-20 gap-2">
-          {% for tag in post.data.tags | filterTagList %} {% set tagUrl %}/tags/{{
+      <ul class="page-tags-list px-4 pb-4 lg:absolute max-w-sm lg:bg-transparent flex flex-row flex-wrap z-20 gap-2">
+          <!-- {% for tag in post.data.tags | filterTagList %} {% set tagUrl %}/tags/{{
             tag | slug
           }}/{% endset %}
           <li class="my-2">
@@ -53,7 +53,16 @@
               >{{ tag }}</a
             >
           </li>
-          {% endfor %}
+          {% endfor %} -->
+            {% for tag in post.data.tags | filterTagList %} {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+            <li>
+              <a href="{{ tagUrl }}"
+                  title="{{ site.url}}{{ tagUrl }}"
+                    class="post-tag md:text-sm rounded-full"
+                    >{{ tag }}</a
+                  >
+            </li>
+            {% endfor %}
       </ul>
     </article>
     {% endfor %}

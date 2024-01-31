@@ -1,9 +1,9 @@
 <nav id="mainNav" aria-label="Global" class="hidden md:flex w-full md:border-b-0 justify-end">
   <h2 class="sr-only">Top level navigation menu</h2>
-  <ul class="md:flex items-center gap-6 lg:my-0 md:flex-row h-full">
+  <ul class="md:flex items-center lg:my-0 md:flex-row h-full">
     {%- for entry in collections.all | eleventyNavigation %}
-    <li>
-      <a id="{{ entry.title }}" aria-label="{{ entry.title }}" class="z-10 text-2xl md:text-base displayFont" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+    <li class="md:w-20 md:text-center">
+      <a id="{{ entry.title }}" aria-label="{{ entry.title }}" class="z-10 mx-3 text-2xl md:text-base displayFont" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
     </li>
     {%- endfor %}
   </ul>

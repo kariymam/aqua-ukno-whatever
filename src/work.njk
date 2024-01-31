@@ -1,0 +1,13 @@
+---
+title: Work
+layout: page.njk
+eleventyNavigation:
+  key: work
+  order: 1
+---
+{% set portfolio = collections.work %}
+<ul>
+  {% for work in portfolio %}
+  <li>{{ work.data.description }}</li>
+  {% endfor %}
+</ul>

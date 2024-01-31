@@ -3,6 +3,9 @@ title: Home
 layout: blogpage.njk
 permalink: /
 numberOfLatestPostsToShow: 3
+eleventyNavigation:
+  key: home
+  order: 1
 ---
 <div class="md:border-t-2 pt-6">
   {% set showYear = true %}
@@ -10,5 +13,3 @@ numberOfLatestPostsToShow: 3
   {% set postslistCounter = postsCount %}
   {% include "postlist-heavy.njk" %}
 </div>
-
-Hello

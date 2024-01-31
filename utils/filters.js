@@ -16,7 +16,7 @@ module.exports = {
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "LLL dd yyyy");
 	},
 	filterTagList: function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts", "drafts"].indexOf(tag) === -1);
+		return (tags || []).filter(tag => ["all", "nav", "post", "posts", "drafts", "work"].indexOf(tag) === -1);
 	},
 	head: (array, n) => { // Get the first `n` elements of a collection.
 		if(!Array.isArray(array) || array.length === 0) {

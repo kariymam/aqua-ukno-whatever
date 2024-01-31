@@ -1,9 +1,8 @@
-  <header id="navContainer" class="flex flex-col-reverse md:flex-row ml-auto w-full stone">
+  <header id="navContainer" class="flex flex-col-reverse md:flex-row ml-auto w-full stone p-6">
     <div class="w-full">
-      {% include "_partials/logo.njk" %}
       {%- if layout == "blogpage.njk" and title !== "Home"  %}
       <div id="tagDrawer" class="md:mb-4 border-2">
-          <details class="open:bg-[var(--background)] p-4 border-[var(--border-primary)] border-2 cursor-pointer transition-all" {%- if title != "All blog posts" %}open{%- endif -%}>
+          <details class="open:border-[var(--background)] p-4 border-[var(--border-primary)] border-2 cursor-pointer transition-all" {%- if title != "All blog posts" %}open{%- endif -%}>
             <summary class="text-base">
               Tags
             </summary>
@@ -15,7 +14,7 @@
     <div
       class="flex w-full md:h-16 md:items-center gap-8"
     >
-      <div class="w-full px-6 pt-6 md:p-0 md:items-center justify-end md:justify-between">
+      <div class="w-full md:p-0 md:items-center justify-end md:justify-between">
         <button
           id="burger"
           class="ml-auto relative block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"

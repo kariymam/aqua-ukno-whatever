@@ -5,15 +5,16 @@ layout: home.njk
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 {% set postsCount = collections.posts | length %}
-{% if numberOfLatestPostsToShow%}
-  <h1 class="mb-1 p-6 md:px-6 border-t-2 displayFont" aria-label="Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}">
+{% if numberOfLatestPostsToShow and title == "Home" %}
+{% include 'intro.njk' %}
+  <h3 class="mb-1 p-6 md:px-9 border-t-2" aria-label="Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}">
     Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}
-    </h1>
-    {% else %}
+    </h3>
+{% else %}
     <h1 class="mb-1 p-6 md:px-6 border-t-2">
       {{ title }}
       </h1>
-  {% endif %}
+{% endif %}
 {{ content | safe }}
 {% if morePosts > 0 %}
     <small>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/tags/">the archive</a>.</small>

@@ -44,16 +44,6 @@
       </a>
       </div>
       <ul class="page-tags-list px-4 pb-4 lg:absolute max-w-sm lg:bg-transparent flex flex-row flex-wrap z-20 gap-2">
-          <!-- {% for tag in post.data.tags | filterTagList %} {% set tagUrl %}/tags/{{
-            tag | slug
-          }}/{% endset %}
-          <li class="my-2">
-            <a href="{{ tagUrl }}"
-              class="post-tag px-2 py-1 rounded-3xl"
-              >{{ tag }}</a
-            >
-          </li>
-          {% endfor %} -->
             {% for tag in post.data.tags | filterTagList %} {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
             <li>
               <a href="{{ tagUrl }}"

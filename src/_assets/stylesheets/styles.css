@@ -56,10 +56,6 @@ a {
 	color: var(--text-color);
 }
 
-/* p a {
-	@apply underline;
-} */
-
 h1 {
 	@apply text-2xl;
 	@apply font-bold;
@@ -108,7 +104,6 @@ a.post-tag {
 	color: var(--text-color);
 	transition-property: background-color, border, color;
 	transition-duration: 0.2s;
-	font-family: var(--pixel-font);
 	margin: 0.5rem 0 0.5rem 0;
 	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
@@ -264,4 +259,28 @@ h3 span {
 	.postlist {
 		grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 	}
+}
+
+details > summary {
+	list-style-type: '＋';
+}
+
+details[open] > summary {
+	list-style-type: '－';
+}
+
+.work-overlay {
+	background-color: transparent;
+}
+
+.work-overlay:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.work-overlay:hover ion-icon {
+	color: transparent;
+}
+
+.work-overlay:hover ion-icon {
+	color: white;
 }

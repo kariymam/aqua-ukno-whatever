@@ -1,6 +1,9 @@
 ---
 title: Capital One
 description: I joined Capital One as a Senior UI/UX Designer in February 2021 to design UI for privacy decision-making and enhancements to the consumer data request portal.
+dates: Feb. 2021 - Aug. 2022
+audience: Regulators, employees using data, and privacy-minded consumers looking to exercise their data
+formats: Web, mobile
 tags:
   - ux/ui design
 ---

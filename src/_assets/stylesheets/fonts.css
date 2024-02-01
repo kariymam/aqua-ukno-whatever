@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;500&family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
 @font-face {
 	font-family: 'FT88';
   src:
@@ -11,8 +14,6 @@
     url("/static/fonts/FT88-Serif.woff2") format("woff2"),
     url("/static/fonts/FT88-Serif.woff") format("woff");
 }
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;500&family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
 
 :root {
   --display-font: 'DM Sans', monospace, Helvetica, Arial, sans-serif, serif, Icons;

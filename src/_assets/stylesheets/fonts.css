@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-	font-family: var(--body-font);
+	font-family: var(--mono-font);
 }
 
 h4 {
@@ -49,6 +49,10 @@ time, small {
 
 .pixel-font {
 	font-family: var(--pixel-font);
+}
+
+details {
+	font-family: var(--mono-font);
 }
 
 a h3 {

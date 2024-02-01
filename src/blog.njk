@@ -1,9 +1,9 @@
 ---
 title: All blog posts
 layout: blogpage.njk
-eleventyNavigation:
+eleventyNavigationBreadcrumb:
   key: blog
-  order: 2
+  parent: home
 ---
 {% set postslist = collections.posts %}
 {% include "postlist.njk" %}

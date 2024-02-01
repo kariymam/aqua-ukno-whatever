@@ -1,18 +1,31 @@
-  <header id="navContainer" class="flex flex-col-reverse md:flex-row ml-auto w-full stone p-6 md:px-0">
+  <header id="navContainer" class="flex flex-col-reverse md:flex-row ml-auto w-full stone p-6 md:py-16 md:pb-6 md:px-0">
+    {%- if layout == "blogpage.njk" and title !== "Home"  %}
     <div class="w-full">
-      {%- if layout == "blogpage.njk" and title !== "Home"  %}
-      <div id="tagDrawer" class="pt-6 md:p-0 md:my-auto border-2">
-          <details class="rounded-3xl md:p-0 bg-[var(--background)] open:bg-[var(--btnHover)] cursor-pointer transition-all" {%- if title != "All blog posts" %}open{%- endif -%}>
+      <div id="tagDrawer" class="pt-6 md:p-0 md:my-auto">
+          <details class="rounded-3xl border-2 md:p-0 bg-[var(--background)] open:bg-[var(--stone)] open:border-[var(--background)] cursor-pointer transition-all" {%- if title != "All blog posts" %}open{%- endif -%}>
             <summary class="text-base md:ml-2">
               Tags
             </summary>
             {% include "_partials/taglist.njk" %}
           </details>
       </div>
-      {% endif %}
     </div>
+    {% else %}
+    <div class="w-auto">
+      <a href="/">
+        <h1 class="text-base">{{ title }}</h1>
+      </a>
+    </div>
+    {% endif %}
+    <!-- {% if numberOfLatestPostsToShow and title == "Home" %}
+    <div class="w-full">
+      <a href="/">
+        <h1 class="text-base">{{ site.title }}</h1>
+      </a>
+    </div>
+    {% endif %} -->
     <div
-      class="w-full mb-auto md:w-auto md:items-center gap-8"
+      class="w-full ml-auto mb-auto md:w-auto md:items-center gap-8"
     >
       <div class="w-full md:p-0 md:items-center justify-end md:justify-between">
         <button

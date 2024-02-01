@@ -49,12 +49,18 @@ body {
 
 a {
 	@apply underline;
+	font-family: var(--mono-font);
 }
 
 .postlist-item a:not(h3, small, time) {
 	text-decoration-line: none;
 	color: var(--text-color);
 }
+
+.postlist-item a p {
+	font-family: var(--body-font);
+}
+
 
 h1 {
 	@apply text-2xl;

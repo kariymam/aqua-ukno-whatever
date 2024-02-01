@@ -3,10 +3,12 @@ layout: home.njk
 date: git Created
 ---
 <div class="flex flex-col md:flex-row">
-  <div class="w-auto max-w-md mb-1 p-6 md:px-9 border-t-2">
-    <h1 class="w-72">{{ title }}</h1>
+  {% if description %}
+  <div class="w-auto mb-1 p-6 md:px-9">
+    <h2 class="w-72">{{ description }}</h2>
   </div>
-      <div class="w-full textblock p-6 max-w-screen-md">
-        {{ content | safe }}
-      </div>
+  {% endif %}
+  <div class="w-full textblock p-6 max-w-screen-md">
+    {{ content | safe }}
+  </div>
 </div>

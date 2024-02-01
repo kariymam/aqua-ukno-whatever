@@ -11,7 +11,7 @@
 		--color-gray-3: rgba(92, 90, 80, 0.85);
 		--color-gray-4: rgba(92, 90, 80, 0.25);
 		--color-gray-5: rgba(244, 244, 236, 0.85);
-		--stone: rgba(231 229 228, 0.85);
+		--stone: rgba(231, 229, 228, 0.859);
 
 		/* color */
 		--light-teal: rgba(2, 174, 143, 0.85);
@@ -35,7 +35,7 @@
     --background: var(--color-gray-1);
 
 		--color-gray-3: rgba(253, 252, 246, 0.85);
-		--stone: rgb(20 19 15);
+		--stone: rgba(20, 19, 15, 0.923);
 		--border-primary: var(--stone);
 		--btn: var(--background);
 		/* --scrimOnHover: var(--color-gray-5); */

@@ -12,9 +12,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./src/fonts/");
 	eleventyConfig.addPassthroughCopy({ "src/blog/writing/img/*": "img" });
 	eleventyConfig.addPassthroughCopy({ "src/blog/work/img/*": "img" });
-	eleventyConfig.addPassthroughCopy({ "src/blog/writing/img/*": "img" });
-	eleventyConfig.addPassthroughCopy({ "src/blog/writing/img/*": "blog/writing/img" });
-	eleventyConfig.addPassthroughCopy({ "src/blog/work/img/*": "blog/work/img" });
 
 	// Filters
 	Object.keys(filters).forEach((filterName) => {

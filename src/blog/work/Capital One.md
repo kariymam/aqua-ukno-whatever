@@ -8,12 +8,6 @@ tags:
   - ux/ui design
 ---
 
-| Info    | Description |
-| ------- | ----------- |
-| When    | Feb. 2021 - Aug. 2022    |
-| Who     | Regulators, employees using data, and privacy-minded consumers looking to exercise their data    |
-| What    | Web, mobile     |
-
 **All mockups and prototypes have been recreated and genericized due to file-sharing and confidentiality restrictions.**
 
 ### What

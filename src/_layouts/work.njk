@@ -14,7 +14,6 @@ date: Created
 <article class="w-full flex flex-col items-center posttextBlock text-base">
   <header class="flex flex-col md:flex-row w-full border-b-2">
     <div class="w-full max-w-lg mb-1 p-6 md:px-9">
-      <h1>{{ title }}</h1>
       <h2>{{ description }}</h2>
     </div>
     <div class="w-full">
@@ -32,19 +31,3 @@ date: Created
 </header>
       {{ content | safe }}
 </article>
-<section class="textblock w-full">
-  {%- if collections.posts %}
-  {%- set previousPost = collections.posts | getPreviousCollectionItem %}
-  {%- set nextPost = collections.posts | getNextCollectionItem %}
-  {%- if nextPost or previousPost %}
-  <div class="mb-1 p-6 border-b-2 flex">
-    {%- if previousPost %}
-            <div class="w-auto">Previous post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></div>
-                {% endif %}
-    {%- if nextPost %}
-    <div class="w-full lg:text-end">Next post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}<ion-icon name="arrow-forward-outline" class="align-middle"></ion-icon></a></div>
-              {% endif %}
-  </div>
-  {%- endif %}
-  {%- endif %}
-</section>

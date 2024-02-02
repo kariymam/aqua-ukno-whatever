@@ -10,11 +10,13 @@
           </details>
       </div>
     </div>
+    {% elif layout == "post.njk" %}
+    <div class="w-auto flex gap-2 text-base">
+      <a href="/blog/">Blog</a> &#x2215;<h1 class="text-base">{{ title }}</h1>
+    </div>
     {% else %}
     <div class="w-auto">
-      <a href="/">
-        <h1 class="text-base">{{ title }}</h1>
-      </a>
+      <h1 class="text-base">{{ title }}</h1>
     </div>
     {% endif %}
     <!-- {% if numberOfLatestPostsToShow and title == "Home" %}

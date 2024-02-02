@@ -3,7 +3,7 @@ title: Monumental
 description: Trying to fix 11ty issues
 tags:
   - exhibition-notes
-thumb: 'imgs/IMG_7283.jpeg'
+thumb: 'img/IMG_7283.jpeg'
 thumbAlt: Image of Sonya Clark's Monumental Cloth
 ---
 
@@ -16,7 +16,7 @@ thumbAlt: Image of Sonya Clark's Monumental Cloth
 - What opportunity does a truce between two sides of the same white supremacist violent state apparatus present for racial injustice?
 - And why is the truce the symbol we should remember? I keep thinking about Derrick Bell’s [[interest convergence]]
 
-![Monumental Cloth](/blog/writing/imgs/IMG_7283.jpeg)
+![Monumental Cloth](/img/IMG_7283.jpeg)
 
 [^1]: [Sonya Clark Unravels American Propaganda In 'Monumental Cloth](https://www.wbur.org/news/2021/04/26/sonya-clark-monumental-cloth-decordova-museum) by Arielle Gray
 

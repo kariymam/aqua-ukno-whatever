@@ -48,8 +48,11 @@ body {
 }
 
 a {
-	@apply underline;
 	font-family: var(--mono-font);
+}
+
+a:not(h1) {
+	@apply underline;
 }
 
 .postlist-item a:not(h3, small, time) {

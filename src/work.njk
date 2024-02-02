@@ -9,14 +9,6 @@ eleventyNavigation:
 {% for work in portfolio %}
 <div class="flex flex-col md:flex-row w-full">
   <div class="w-full max-w-lg mb-1 p-6 md:px-9">
-    <!-- <h1>
-      {% if work.data.penUrl %}
-      <a href="{{ work.data.penUrl }}" target="_blank">{{ work.data.title }}</a>&#128279;</h1>
-      {% else %}
-      {{ work.data.title }}
-      {% endif %}
-    <h2>{{ work.data.description }}</h2>
-    <a href="{{ work.url }}">Read more about {{ work.data.title }}</a> -->
 
     <h1>{{ work.data.title }}</h1>
     <h2>{{ work.data.description }}</h2>

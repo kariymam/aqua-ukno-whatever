@@ -10,8 +10,11 @@ module.exports = function (eleventyConfig) {
 	// Folders to copy to build dir (See. 1.1)
 	eleventyConfig.addPassthroughCopy("src/static");
 	eleventyConfig.addPassthroughCopy("./src/fonts/");
-	eleventyConfig.addPassthroughCopy("./src/blog/writing/imgs");
-	eleventyConfig.addPassthroughCopy("./src/blog/projects/imgs");
+	eleventyConfig.addPassthroughCopy({ "src/blog/writing/img/*": "img" });
+	eleventyConfig.addPassthroughCopy({ "src/blog/work/img/*": "img" });
+	eleventyConfig.addPassthroughCopy({ "src/blog/writing/img/*": "img" });
+	eleventyConfig.addPassthroughCopy({ "src/blog/writing/img/*": "blog/writing/img" });
+	eleventyConfig.addPassthroughCopy({ "src/blog/work/img/*": "blog/work/img" });
 
 	// Filters
 	Object.keys(filters).forEach((filterName) => {

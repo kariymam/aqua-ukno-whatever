@@ -5,12 +5,12 @@ module.exports = {
 		},
 		fontSize: {
       sm: '0.8rem',
-      base: '1.3rem',
-      xl: '2rem',
+      base: '1rem',
+      xl: '1.5rem',
       '2xl': '3.516rem',
-      '3xl': '1.953rem',
-      '4xl': '2.441rem',
-      '5xl': '3.052rem',
+      '3xl': '4.766rem',
+      '4xl': '6rem',
+      '5xl': '7.25rem',
     },
 		extend: {
 			colors: {

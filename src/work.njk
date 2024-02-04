@@ -13,7 +13,7 @@ eleventyNavigation:
     <h1>{{ work.data.title }}</h1>
     <h2>{{ work.data.description }}</h2>
     {% if work.data.penUrl %}
-    <a href="{{ work.data.penUrl }}" target="_blank">Go to {{ work.data.title }} codepen</a>&#128279;</h1>
+    <a href="{{ work.data.penUrl }}" target="_blank" rel="noopener">Go to {{ work.data.title }} codepen</a>&#128279;</h1>
     {% else %}
     <a href="{{ work.url }}">Read more about {{ work.data.title }}</a>
     {% endif %}
@@ -36,6 +36,7 @@ eleventyNavigation:
       <a
         href="{{ work.data.penUrl }}"
         target="_blank"
+        rel="noopener"
         class="flex w-full h-full items-center justify-center text-4xl">
          Link to Codepen &#128279;
         </a>

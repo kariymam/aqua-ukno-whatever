@@ -20,4 +20,4 @@ thumbAlt: Image of Sonya Clark's Monumental Cloth
 
 [^1]: [Sonya Clark Unravels American Propaganda In 'Monumental Cloth](https://www.wbur.org/news/2021/04/26/sonya-clark-monumental-cloth-decordova-museum) by Arielle Gray
 
-![[IMG_7280.jpeg]]
+![Exhibition work description](/img/IMG_7280.jpeg)
